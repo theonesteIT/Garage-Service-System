@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.header{
+    width: 100%;
+    height: 1.6cm;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0px 0px 2px #ccc;
+}
+.header .logo{
+    width: 30%;
+    
+}
+.header .logo img{
+    width: 40%;
+    padding: 10px 0px;
+}
+.header .navbar{
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    margin: 10px 40px;
+    padding: 10px 20px;
+}
+.header .navbar .nav a{
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.header .navbar .nav a::after{
+    content: "";
+   height: 0px;
+    display: block;
+background-color: darkcyan;
+}
+
+.header .navbar .nav a:hover::after{
+    height: 0.8px;
+}
+
+/* container */
+.container{
+    background-image: url(image/garage3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 7cm;
+    background-position: center;
+    opacity: 0.8;
+}
+.container .details {
+background-color: darkcyan;
+width: 30%;
+height: 7cm;
+}
+.container .details h2{
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 6px
+}
+.container .details p{
+    margin: 30px 0px;
+}
+.container .details .btn{
+    background-color: #162938;
+    width: 50%;
+    height: 0.6cm;
+    border-radius: 5px;
+    margin: 2px 40px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.container .details .btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.container .details .btn:hover{
+    background-color: #fff;
+   color: #162938;
+}
+.container .details .btn a:hover{
+    color: #162938;
+}
+.serviceBar{
+    width: 95%;
+    margin: 20px auto;
+
+}
+.serviceBar h2{
+    color: #162938;
+    text-align: center;
+font-size: 1.2rem;
+}
+.serviceBar h2::after{
+    content: '';
+    background-color: #162938;
+    width: 15%;
+    height: 6px;
+    display: block;
+    margin: 0px 255px;
+}
+.serviceBar .service{
+margin: 20px 0px;
+display: flex;
+gap: 10px;
+width: 100%;
+}
+.serviceBar .service .serviceDetail{
+    box-shadow: 0px 0px 4px #162938;
+    border-radius: 8px;
+    width: 30%;
+}
+.serviceBar .service .serviceDetail img{
+    width: 90%;
+    margin: 20px 10px;
+    height: 4cm;
+}
+.serviceBar .service .serviceDetail h3{
+    color: #162938;
+    font-size: 1rem;
+    text-align: center;
+}
+.serviceBar .service .serviceDetail p{
+    margin: 10px 0px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+/* start footer */
+.footer{
+    width: 100%;
+    height: 3cm;
+    margin: 10px 0px;
+    background-color: #162938;
+    display: flex;
+  
+}
+.footer .logo{
+    width: 48%;
+}
+.footer .logo img{
+    width: 40%;
+    padding: 10px 0px;
+}
+.footer .contact{
+    background-color: darkcyan;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 10%;
+    width: 48%;
+    padding: 0px 30px;
+    height: 3cm;
+    text-align: center;
+    color: #162938;
+}
+.footer .contact p{
+    color: #fff;
+    font-size: 0.7rem;
+}
+/* offer css */
+.parent{
+    background-color: rgb(233, 255, 255);
+    margin: 0px ;
+    padding: 0;
+    height: 9cm;
+}
+.offerForm{
+    box-shadow:0px 0px 4px  darkcyan;
+    border-radius: 10px;
+    width: 35%;
+    margin:     0px auto;
+}
+.offerForm img{
+    width: 30%;
+    margin: 10px 37%;
+}
+.offerForm h2{
+color: #162938;
+text-align: center;
+font-size: 1rem;
+}
+.offerForm .formDetail{
+    background-color: #162938;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.offerForm .formDetail form{
+    width: 100%;
+    margin: 4px 10px;
+}
+.offerForm .formDetail form label{
+    color: #fff;
+    margin: 0px;
+    font-size: 0.8rem;
+}
+.offerForm .formDetail form  input{
+    width: 90%;
+}
+.offerForm .formDetail form button{
+    background-color: #fff;
+    color: #162938;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 40px;
+    cursor: pointer;
+    height: 0.6cm;
+}
+.offerForm .formDetail form button:hover{
+    background-color: #162938;
+    box-shadow: 0px 0px 20px darkcyan;
+    color: #fff;
+}
+/* style of dashboard */
+.header .navbar h3{
+    color: #162938;
+    font-size: 1rem;
+}
+.dashboardContainer{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.dashboardContainer .dashboardNav{
+    width: 20%;
+    background-color: darkcyan;
+    height: 6cm;
+}
+.dashboardContainer .dashboardNav .nav{
+    width: 100%;
+    height: 1cm;
+    margin: 10px 0px;
+}
+.dashboardContainer .dashboardNav .nav::after{
+    content: '';
+    background-color: #162938;
+  width: 100%;
+  display: block;
+  height: 1px;
+
+}
+.dashboardContainer .dashboardNav a{
+    text-decoration: none;
+    color: #fff;
+   
+    
+}
+/* dashboardContent */
+.dashboardContent{
+    width: 80%;
+    background-color: rgb(244, 255, 255);
+}
+.dashboardContent .dashboardContentHeader{
+color: #162938;
+}
+.dashboardContent .dashboardContentHeader h2{
+    font-size: 1.1rem;
+}
+.dashboardContent .dashboardContentHeader h2 .span{
+    font-size: 0.8rem;
+    color: darkcyan;
+}
+.dashboardContent .table{
+    margin: 20px 0px;
+}
+.dashboardContent .table h3{
+    text-align: center;
+    color: #162938;
+}
+.dashboardContent .table table{
+    border-collapse: collapse;
+    width: 97%;
+    margin: auto;
+    cursor: pointer;
+    font-size: 0.6rem;
+}
+.dashboardContent .table table tr:hover{
+    background-color: rgb(197, 252, 252);
+    
+}
+.dashboardContent .table table th{
+    color: #162938;
+    font-size: 1rem;
+}
+.dashboardContent .table table .delete{
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 0.5cm;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+.dashboardContent .table table .update{
+    background-color: darkgreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 0.5cm;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
